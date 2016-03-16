@@ -326,107 +326,116 @@ This command will send text to [group_id]
     help_text = [[
 Commands list :
 
-!kick [username|id]
-You can also do it by reply
+🔰!kick [username|id]
+🔹اخراج کردن فرد شما میتونید از ریپلای هم استفاده کنید 
 
-!ban [ username|id]
-You can also do it by reply
+🔰!ban [ username|id]
+🔹بن کردن فرد شما میتوانید از ریپلای هم استفاده کنید
 
-!unban [id]
-You can also do it by reply
+🔰!unban [id]
+🔹حذف بن فرد بن شده شما میتوانید از ریپلای هم استفاده کنید
 
-!who
-Members list
+🔰!who
+🔹لیست اعضا
 
-!modlist
-Moderators list
+🔰!modlist
+🔹
+لیست مدیران
 
-!promote [username]
-Promote someone
+🔰!promote [username]
+🔹دادن مقام شما میتوانید از ریپلای هم استفاده کنید
 
-!demote [username]
-Demote someone
+🔰!demote [username]
+🔹گرفتن مقام شما میتوانید از ریپلای هم استفاده کنید
 
-!kickme
-Will kick user
+🔰!kickme
+🔹خروج از گروه
 
-!about
-Group description
+🔰!about
+🔹موضوع گروه
 
-!setphoto
-Set and locks group photo
+🔰!setphoto
+🔹تنظیم عکس و قفل کردن آن
 
-!setname [name]
-Set group name
+🔰!setname [name]
+🔹تنظیم اسم گروه
 
-!rules
-Group rules
+🔰!rules
+🔹قوانین گروه
 
-!id
-Return group id or user id
+🔰!id
+🔹دریافت ایدی گروه و افراد
 
-!help
-Get commands list
+🔰!help
+🔹لیست دستورات ربات (همین متن)
 
-!lock [member|name|bots|leave] 
-Locks [member|name|bots|leaveing] 
+🔰!lock [member|name|bots|leave] 
+🔹قفل کردن [اعضا|اسم|ربات ها|خروج] 
 
-!unlock [member|name|bots|leave]
-Unlocks [member|name|bots|leaving]
+🔰!unlock [member|name|bots|leave]
+🔹بازکردن[اعضا|اسم|ربات ها|خروج]
 
-!set rules [text]
-Set [text] as rules
+🔰!set rules [text]
+🔹تنظیم قوانین گروه
 
-!set about [text]
-Set [text] as about
+🔰!set about [text]
+🔹تنظیم موضوع گروه
 
-!settings
-Returns group settings
+🔰!filter [+|>|-] [word]
+🔹+=فیلتر کردن کلمه <=اخطار به کلمه -= حذف کلمه از فیلتر
 
-!newlink
-Create/revoke your group link
+🔰!filterlist
+🔹لیست فیلتر
 
-!link
-Returns group link
+🔰!settings
+🔹دریافت تنظیمات گروه
 
-!owner
-Returns group owner id
+🔰!newlink
+🔹ساخت/تغییر لینک گروه
 
-!setowner [id]
-Will set id as owner
+🔰!link
+🔹دریافت لینک گروه
 
-!setflood [value]
-Set [value] as flood sensitivity
+🔰!owner
+🔹دریافت ایدی صاحب گروه
 
-!stats
-Simple message statistics
+🔰!setowner [id]
+🔹انتخاب فرد به عنوان صاحب گروه
 
-!save [value] [text]
-Save [text] as [value]
+🔰!setflood [value]
+🔹تنظیم عدد حساسی به اسپم
 
-!get [value]
-Returns text of [value]
+🔰!stats
+🔹دریافت پیام ها|اعضاو اتفاقات داخل گروه
 
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
+🔰!save [value] [text]
+🔹ذخیره کردن متنی بر حسب عدد
 
-!res [username]
-Returns user id
+🔰!get [value]
+🔹دریافت متن ذخیره شده با عدد
 
-!log
-Will return group logs
+🔰!clean [modlist|rules|about]
+🔹پاک کردن [مدیران|قوانین|موضوع]
 
-!banlist
-Will return group ban list
+🔰!res [username]
+🔹دریافت ایدی فرد 
 
-» U can use both "/" and "!" 
+🔰!log
+🔹دریافت اتفاقات گروه
 
-» Only mods, owner and admin can add bots in group
+🔰!banlist
+🔹دریافت لیست افراد بن شده
 
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
+» شما ویتوانید از "!" و "/" استفاده کنید
 
-» Only owner can use res,setowner,promote,demote and log commands
+»  فقط مدیران میتوانند ربات ادد کنند
 
+» فقط مدیران میتوانند از kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings استفاده کنند
+
+» فقط صاحب گروه میتواند از res,setowner,promote,demote and log استفاده کنند
+
+👮Sudo: @Anonymous1221
+👷Channel: @Viper_ch
 ]]
   }
   serialize_to_file(config, './data/config.lua')
